@@ -13,15 +13,26 @@
     <form id="resume-form">
         <fieldset>
             <legend>Personal Information</legend>
+            <label for="objective">Objective:</label>
+            <textarea id="skills" placeholder="Add Objective" rows="4" required></textarea>
+            <br> <br>
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter your Name" required>
             <br> <br>
+            <label for="father name">Father Name:</label>
+            <input type="text" id="name" placeholder="Enter your Father Name" required>
+            <br> <br>    
+            <label for="Contact">Contact:</label>
+            <input type="tel" id="phone" placeholder="Enter your Contact Number" required>
+            <label for="cnic">Cnic:</label>
+            <input type="cnic" id="phone" placeholder="Enter your Cinc Number" required>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your Email" required>
             <br> <br>
-            <label for="phone">Contact:</label>
-            <input type="tel" id="phone" placeholder="Enter your Contact Number" required>
-        </fieldset>
+
+        <label for="address">Address</label>
+                <textarea id="skills" placeholder="Enter your Address" rows="4" required></textarea>
+            </fieldset>
         <fieldset>
             <legend>Education</legend>
             <select aria-label="State" id="education">
@@ -37,11 +48,11 @@
         </fieldset>
         <fieldset>
             <legend>Experience</legend>
-            <textarea id="experience" placeholder="Enter your Experience" rows="4" required></textarea>
+            <textarea id="experience" placeholder="Enter your Experience" rows="5" required></textarea>
         </fieldset>
         <fieldset>
             <legend>Skills</legend>
-            <textarea id="skills" placeholder="Enter your Skills" rows="4" required></textarea>
+            <textarea id="skills" placeholder="Enter your Skills" rows="5" required></textarea>
         </fieldset>
         <br>
        <button type="submit"><b>GENERATE RESUME</b></button>
