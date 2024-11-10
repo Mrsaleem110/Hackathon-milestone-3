@@ -8,8 +8,8 @@ form.addEventListener('submit', (event: Event) => {
     // Collect Input value
     const objective = (document.getElementById('objective') as HTMLInputElement).value
     const name = (document.getElementById('name') as HTMLInputElement).value
-    const Fathername = (document.getElementById('father name') as HTMLInputElement).value
-    const contact = (document.getElementById('phone') as HTMLInputElement).value
+    const FaterName = (document.getElementById('FaterName') as HTMLInputElement).value
+    const phone = (document.getElementById('phone') as HTMLInputElement).value
     const cnic = (document.getElementById('cnic') as HTMLInputElement).value
     const email = (document.getElementById('email') as HTMLInputElement).value
     const address = (document.getElementById('address') as HTMLInputElement).value
@@ -23,13 +23,15 @@ form.addEventListener('submit', (event: Event) => {
 <h3><b>Personal Information</b></h3>
 <p><b>Objective:</b>${objective}</p>
 <p><b>Name:</b>${name}</p>
-<p><b>FatherName:</b>${Fathername}</p>
-<p><b>Contact:</b>${contact}</p>
-<p><b>Cnic:</b>${cnic}}</p>
+<p><b>FatherName:</b>${FaterName}</p>
+<p><b>Contact:</b>${phone}</p>
+<p><b>Cnic:</b>${cnic}</p>
 <p><b>Email:</b>${email}</p>
 <p><b>Address:</b>${address}</p>
+
 <h3><b>Education</b></h3>
 <p>${education}</p>
+
 <h3><b>Experience</b></h3>
 <p>${experience}</p>
 
@@ -43,3 +45,5 @@ if(resumeDisplayElement){
     console.error('The resume display element is missing.')
 }
 })
+
+

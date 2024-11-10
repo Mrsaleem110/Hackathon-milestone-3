@@ -13,26 +13,30 @@
     <form id="resume-form">
         <fieldset>
             <legend>Personal Information</legend>
-            <label for="objective">Objective:</label>
-            <textarea id="skills" placeholder="Add Objective" rows="4" required></textarea>
-            <br> <br>
-            <label for="name">Name:</label>
+
+             <label for="objective">Objective:</label>
+             <textarea id="objective" placeholder="Enter your Objective" rows="3" required></textarea>
+             <br><br>
+             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Enter your Name" required>
             <br> <br>
-            <label for="father name">Father Name:</label>
-            <input type="text" id="name" placeholder="Enter your Father Name" required>
-            <br> <br>    
+            <label for="FaterName">FaterName:</label>
+            <input type="text" id="FaterName" placeholder="Enter your FaterName" required>
+            <br><br>
             <label for="phone">Contact:</label>
-            <input type="tel" id="phone" placeholder="Enter your Contact Number" required>
+            <input type="number" id="phone" placeholder="Enter your Contact Number" required>
+            <br><br>
             <label for="cnic">Cnic:</label>
-            <input type="cnic" id="cnic" placeholder="Enter your Cinc Number" required>
+            <input type="number" id="cnic" placeholder="Enter your Cnic Number" required>
+            <br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your Email" required>
             <br> <br>
-
-        <label for="address">Address</label>
-                <textarea id="skills" placeholder="Enter your Address" rows="4" required></textarea>
-            </fieldset>
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your Objective" rows="4" required></textarea>
+            <br><br>
+  
+        </fieldset>
         <fieldset>
             <legend>Education</legend>
             <select aria-label="State" id="education">
@@ -40,8 +44,10 @@
                 <OPTION>MIDDLE</OPTION><BR>
                 <OPTION>MATRIC</OPTION><BR>
                 <OPTION>INTER</OPTION><BR>
-                <OPTION>UNDER GRADUATE</OPTION><BR>
-                <OPTION>GRADUATE</OPTION><BR>
+                <OPTION>UNDER GRADUATE(2 year Bachelor)</OPTION><BR>
+                <OPTION>GRADUATE(4 year Bachelor/Master)</OPTION><BR>
+                <OPTION>Post GRADUATE(M.phill)</OPTION><BR>
+                <OPTION>LLB</OPTION><BR>
                 <OPTION>PHD</OPTION><BR>
             </select>
             <BR><BR>
@@ -52,7 +58,7 @@
         </fieldset>
         <fieldset>
             <legend>Skills</legend>
-            <textarea id="skills" placeholder="Enter your Skills" rows="5" required></textarea>
+            <textarea id="skills" placeholder="Enter your Skills" rows="4" required></textarea>
         </fieldset>
         <br>
        <button type="submit"><b>GENERATE RESUME</b></button>
@@ -61,9 +67,11 @@
      <br>
 
      <div id="resume-display">
-        <!-- Resume will be generated in below -->
-     </div>
+        HERE IS YOUR RESUME
+      </div>
      <script src="script.js"></script>
 </body>
 
 </html>
+
+
